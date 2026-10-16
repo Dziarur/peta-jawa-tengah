@@ -57,3 +57,6 @@ Proyek ini memanfaatkan beberapa sumber data dan pustaka pihak ketiga berikut:
 
 ## 📄 Lisensi
 Proyek ini bersifat *open-source* dan dapat digunakan secara bebas untuk keperluan analisis data, pembelajaran, maupun portofolio profesional.
+
+## Link Web Peta Jawa tengah Interaktif
+https://peta-jawa-tengah.vercel.app/
