@@ -24,7 +24,7 @@ pip install pandas folium
 ## 📂 Struktur File
 Pastikan file-file berikut berada dalam satu direktori yang sama:
 ```text
-├── peta_tpt_jateng.py          # Skrip utama python
+├── main.ipynb                  # Skrip utama python
 ├── data_tpt_jateng.csv         # Data statistik TPT (dari BPS)
 ├── peta_jateng.geojson         # Data spasial/peta wilayah Jawa Tengah
 └── peta_interaktif_jateng_fix.html # File keluaran peta interaktif
@@ -35,16 +35,8 @@ Pastikan file-file berikut berada dalam satu direktori yang sama:
 ## 🚀 Cara Menjalankan
 1. Clone atau unduh repository ini ke komputer Anda.
 2. Pastikan file CSV dan GeoJSON sudah sesuai dengan struktur kolom yang dibutuhkan.
-3. Jalankan skrip Python melalui terminal atau IDE Anda:
-   ```bash
-   python peta_tpt_jateng.py
-   ```
+3. Jalankan skrip Python melalui terminal atau IDE Anda
 4. Buka file hasil keluaran berupa **`peta_interaktif_jateng_fix.html`** menggunakan browser web apa pun (Chrome, Edge, Firefox, dll.) untuk melihat peta interaktifnya.
-
----
-
-## 🔍 Catatan Penyesuaian Kolom (GeoJSON)
-Jika Anda mendapati galat terkait nama properti wilayah (misalnya error `AssertionError` pada kolom wilayah), pastikan Anda memeriksa nama kolom di dalam file GeoJSON Anda (seperti `WADMKK`, `NAMOBJ`, atau `KABKOT`) dan sesuaikan variabel pemanggilan di dalam skrip Python.
 
 ---
 
@@ -53,7 +45,7 @@ Proyek ini memanfaatkan beberapa sumber data dan pustaka pihak ketiga berikut:
 
 1. **Dataset TPT:** 
    * **Sumber:** **Badan Pusat Statistik (BPS) Provinsi Jawa Tengah**.
-   * **Keterangan:** Data statistik resmi terkait persentase Tingkat Pengangguran Terbuka (TPT) tingkat kabupaten/kota (bersumber dari Survei Angkatan Kerja Nasional / Sakernas).
+   * **Keterangan:** Data statistik resmi terkait persentase Tingkat Pengangguran Terbuka (TPT) tingkat kabupaten/kota 2025 (bersumber dari Survei Angkatan Kerja Nasional / Sakernas).
 2. **Data Spasial / Peta Wilayah (GeoJSON):** 
    * **Sumber:** Repositori publik GitHub (salah satunya dari kontribusi akun **`ardian28`**) serta data batas administrasi wilayah Indonesia.
    * **Keterangan:** Berkas poligon geometris untuk memetakan batas wilayah administratif Jawa Tengah.
